@@ -33,7 +33,7 @@ const EmployeeLIst = () => {
     <tr>
         {users.map(user => (
             <tr key={user.login.uuid}>
-        <td><img src={user.picture.medium}> </img></td>
+        {/* <td><img src={user.picture.thumbnail}> </img></td> */}
         <td>{user.name.first + " " + user.name.last}</td>
         <td>{user.email}</td>
         <td>{user.cell}</td>
