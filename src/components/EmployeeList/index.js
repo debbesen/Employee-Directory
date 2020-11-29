@@ -15,32 +15,27 @@ const EmployeeLIst = () => {
       }, [])
 
 
-    const header = ['pic', 'name', 'email', 'number']
+    const header = ['name', 'email', 'number']
 
     return ( 
      <div>
-        <table class="table table-bordered table-dark">
+        <table className="table table-bordered table-dark">
+    
+  <tbody>
+
     <tr>
         {header.map((headers, i ) => 
              <th scope="col" key={i}>{headers}</th>
         )}
-     
-      
-    </tr>
-  
-  <tbody>
-      
-    <tr>
-        {users.map(user => (
+     </tr>
+ 
+      {users.map(user => (   
             <tr key={user.login.uuid}>
-        {/* <td><img src={user.picture.thumbnail}> </img></td> */}
         <td>{user.name.first + " " + user.name.last}</td>
         <td>{user.email}</td>
         <td>{user.cell}</td>
         </tr>
         )) }
-        
-    </tr>
    
   </tbody>
 </table>
