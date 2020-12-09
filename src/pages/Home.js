@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../components/Button';
-import Jumbotron from '../components/Jumbotron';
-import EmployeeLIst from '../components/EmployeeList';
+import Button from '../components/Button/index';
+import Jumbotron from '../components/Jumbotron/index';
+import EmployeeLIst from '../components/EmployeeList/index';
 
 const Home = () => {
 
